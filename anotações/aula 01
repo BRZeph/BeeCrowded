@@ -1,0 +1,34 @@
+Cronograma:
+    time e organização
+    análise de algoritmo
+    arrays
+    pilha e fila
+    conjuntos
+    recursão
+    lista
+    árvore
+
+Constuma cair:
+    ordenação
+    heaps
+    backtracking -> testar tudo, força bruta (problema das 8 rainhas)
+    programação dinâmica
+    grafo -> bfs, dfs, peso (NN)
+    srting
+
+BeeCrowd -> mais profissional que Leetcode. Mais focado em aprendizado profissional.
+LeetCode -> mais big tech.
+Uva -> mais maratona.
+
+
+
+Agenda de hoje:
+    Objetivo
+    Big-O
+    exemplos
+    extra
+    referências
+
+amortização:
+    suponha um algorítmo que tem custo: 1, 1, 1, 1, 4, tem O(1) amortizado
+    hashmap tem O(1) amortizado, mesma ideia para o Set (isso para insert).
