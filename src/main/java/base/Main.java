@@ -1,9 +1,9 @@
-package org.example.base;
+package base;
 
 import java.util.List;
 import java.util.Scanner;
 
-public class base {
+public class Main {
 
     private static final List<String> testCases = List.of(
     );

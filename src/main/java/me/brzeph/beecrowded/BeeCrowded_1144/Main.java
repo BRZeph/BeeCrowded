@@ -1,9 +1,9 @@
-package org.example.BeeCrowded_1144;
+package me.brzeph.beecrowded.BeeCrowded_1144;
 
 import java.util.List;
 import java.util.Scanner;
 
-public class BeeCrowded_1144 {
+public class Main {
 
     public static final List<Integer> testCases = List.of(
             5
