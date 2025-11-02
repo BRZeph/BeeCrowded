@@ -1,7 +1,9 @@
 package me.brzeph.beecrowded.BeeCrowded_1068;
 
+import java.util.EmptyStackException;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Main {
 
@@ -10,10 +12,11 @@ public class Main {
             "(a+b*(2-c)-2+a)*2",
             "(a*b-(2+c)",
             "2*(3-a))",
-            ")3+b*(2-c)("
+            ")3+b*(2-c)(",
+            "2+5*(5+2(+3"
     );
     public static void main(String[] args) {
-        boolean finalSolution = true;
+        boolean finalSolution = false;
 
         if(finalSolution){
             Scanner scanner = new Scanner(System.in);
@@ -27,7 +30,36 @@ public class Main {
                 i++;
                 System.out.println("\n\nTest case: " + i);
                 solve(s);
+                solveStack(s);
             }
+        }
+    }
+
+    private static void solveStack(String inpS){
+        Stack<Character> stack = new Stack<>();
+        boolean isValid = true;
+
+        for (Character c : inpS.toCharArray()){
+            if(c == '('){
+                stack.add(c);
+            } else if (c == ')'){
+                if (!stack.isEmpty() && stack.peek().equals('(')) {
+                    stack.pop();
+                } else {
+                    isValid = false;
+                    break;
+                }
+            }
+        }
+
+        if(!stack.isEmpty()){
+            isValid = false;
+        }
+
+        if (isValid){
+            System.out.println("correct");
+        } else {
+            System.out.println("incorrect");
         }
     }
 

@@ -1,0 +1,15 @@
+Pilha -> LIFO -> Stack<?>
+push()
+peek()
+isEmpty()
+pop()
+size()
+
+Fila -> FIFO -> Queue<?>
+enqueue()
+dequeue()
+size()
+isEmpty()
+peek()
+
+Existem Pilhas e Filas monotônicas que mantém ordenado.
